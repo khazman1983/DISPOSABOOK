@@ -533,6 +533,488 @@
             #form9-container #f9_table td:last-child { display: none !important; }
         }
 
+
+        /* =========================================================
+           BORANG ARKIB 12/08 - SUSUN ATUR RASMI BERCETAK
+           Scoped kepada #form12-container sahaja.
+           Fungsi dan struktur modul lain tidak diubah.
+           ========================================================= */
+        #form12-container.form12-a4 {
+            width: 794px;
+            min-height: 1123px;
+            padding: 76px 68px 58px 68px;
+            margin: 20px auto;
+            background: #fff;
+            box-sizing: border-box;
+            box-shadow: none;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            line-height: 1.18;
+        }
+
+        #form12-container * { box-sizing: border-box; }
+
+        #form12-container input,
+        #form12-container textarea,
+        #form12-container select {
+            border: none !important;
+            outline: none !important;
+            background: transparent !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            color: #000 !important;
+            font: inherit !important;
+        }
+
+        #form12-container input[type="date"] {
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        #form12-container .f12-top-reg {
+            text-align: center;
+            font-weight: 700;
+            font-size: 11px;
+            margin: 0 0 13px;
+        }
+
+        #form12-container .f12-header-line {
+            position: relative;
+            height: 38px;
+            margin-bottom: 5px;
+        }
+
+        #form12-container .f12-form-no {
+            position: absolute;
+            left: 305px;
+            top: 0;
+            font-size: 11px;
+        }
+
+        #form12-container .f12-arkib-no {
+            position: absolute;
+            right: 57px;
+            top: 13px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        #form12-container .f12-main-title {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 700;
+            margin: 0 0 18px;
+        }
+
+        #form12-container .f12-frame {
+            border: 1px solid #000;
+            width: 100%;
+        }
+
+        #form12-container .f12-section-title {
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom: 1px solid #000;
+        }
+
+        #form12-container .f12-dept-row {
+            display: grid;
+            grid-template-columns: 49% 51%;
+            height: 47px;
+            border-bottom: 1px solid #000;
+        }
+
+        #form12-container .f12-dept-row > div:first-child {
+            border-right: 1px solid #000;
+        }
+
+        #form12-container .f12-cell {
+            padding: 17px 7px 5px;
+            position: relative;
+            min-width: 0;
+        }
+
+        #form12-container .f12-inline {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            min-width: 0;
+        }
+
+        #form12-container .f12-inline input,
+        #form12-container .f12-inline select {
+            flex: 1;
+            width: auto !important;
+            min-width: 10px;
+        }
+
+        #form12-container .f12-record-title {
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom: 1px solid #000;
+        }
+
+        #form12-container .f12-permission {
+            height: 78px;
+            padding: 18px 7px 5px;
+            border-bottom: 1px solid #000;
+        }
+
+        #form12-container .f12-permission-sub {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-top: 17px;
+            padding-left: 27px;
+        }
+
+        #form12-container .f12-permission-sub > div {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            min-width: 0;
+        }
+
+        #form12-container .f12-permission-sub input {
+            flex: 1;
+            min-width: 10px;
+        }
+
+        #form12-container .f12-one-line {
+            height: 46px;
+            padding: 17px 7px 5px;
+            border-bottom: 1px solid #000;
+        }
+
+        #form12-container .f12-method {
+            height: 94px;
+            padding: 17px 7px 5px;
+            border-bottom: 1px solid #000;
+            position: relative;
+        }
+
+        #form12-container .f12-method-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        #form12-container #receiptContainer {
+            display: flex !important;
+            align-items: baseline;
+            gap: 3px;
+            margin: 0 !important;
+            padding: 0 !important;
+            color: #000 !important;
+            font-weight: 400 !important;
+            min-width: 220px;
+        }
+
+        #form12-container #receiptContainer label {
+            color: #000 !important;
+            font-weight: 400 !important;
+            white-space: nowrap;
+        }
+
+        #form12-container #f12_no_resit {
+            width: 86px !important;
+            border-bottom: 1px dotted #000 !important;
+        }
+
+        #form12-container .f12-method-options {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 14px;
+            gap: 8px;
+        }
+
+        #form12-container .f12-check-label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+            font-weight: 400;
+        }
+
+        #form12-container input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 24px !important;
+            height: 24px !important;
+            border: 1px solid #000 !important;
+            background: #fff !important;
+            flex: 0 0 24px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        #form12-container input[type="checkbox"]:checked::after {
+            content: "✓";
+            position: absolute;
+            left: 4px;
+            top: -3px;
+            font-size: 23px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+
+        #form12-container .f12-destroy-row {
+            display: grid;
+            grid-template-columns: 49% 51%;
+            height: 47px;
+            border-bottom: 1px solid #000;
+        }
+
+        #form12-container .f12-destroy-row > div:first-child {
+            border-right: 1px solid #000;
+        }
+
+        #form12-container .f12-officer-head {
+            height: 46px;
+            display: flex;
+            align-items: center;
+            padding: 0 7px;
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom: 1px solid #000;
+        }
+
+        #form12-container .f12-officers {
+            display: grid;
+            grid-template-columns: 49% 51%;
+            height: 77px;
+            border-bottom: 1px solid #000;
+        }
+
+        #form12-container .f12-officers > div:first-child {
+            border-right: 1px solid #000;
+        }
+
+        #form12-container .f12-officer-box {
+            position: relative;
+            padding: 16px 7px 4px 39px;
+            line-height: 1.25;
+        }
+
+        #form12-container .f12-officer-num {
+            position: absolute;
+            left: 7px;
+            top: 16px;
+        }
+
+        #form12-container .f12-field-line {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            min-width: 0;
+            min-height: 16px;
+        }
+
+        #form12-container .f12-field-line input {
+            flex: 1;
+            min-width: 10px;
+        }
+
+        #form12-container .f12-sig-slot {
+            position: relative;
+            height: 16px;
+            flex: 1;
+        }
+
+        #form12-container .f12-sig-slot img,
+        #form12-container .f12-cert-assets img {
+            position: absolute;
+            max-height: 42px;
+            max-width: 120px;
+            object-fit: contain;
+            z-index: 1;
+        }
+
+        #form12-container .f12-sig-slot img {
+            top: -13px;
+            left: 0;
+        }
+
+        #form12-container .f12-invisible-btn,
+        #form12-container .f12-invisible-label {
+            position: absolute;
+            inset: -12px 0 -12px 0;
+            border: 0 !important;
+            background: transparent !important;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 3;
+        }
+
+        #form12-container .f12-cert-title {
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom: 1px solid #000;
+        }
+
+        #form12-container .f12-cert-body {
+            min-height: 136px;
+            padding: 16px 7px 8px;
+            position: relative;
+        }
+
+        #form12-container .f12-cert-text {
+            display: flex;
+            align-items: flex-start;
+            gap: 9px;
+            line-height: 1.22;
+        }
+
+        #form12-container .f12-cert-num {
+            font-weight: 700;
+            flex: 0 0 auto;
+        }
+
+        #form12-container .f12-cert-grid {
+            display: grid;
+            grid-template-columns: 47% 53%;
+            margin-top: 17px;
+            padding-left: 29px;
+            row-gap: 17px;
+        }
+
+        #form12-container .f12-cert-grid > div {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            min-width: 0;
+            position: relative;
+        }
+
+        #form12-container .f12-cert-grid input {
+            flex: 1;
+            min-width: 10px;
+        }
+
+        #form12-container .f12-cert-assets {
+            position: absolute;
+            left: 210px;
+            top: -15px;
+            width: 135px;
+            height: 45px;
+            pointer-events: none;
+        }
+
+        #form12-container #f12_sig_sah { left: 0; top: 0; }
+        #form12-container #f12_stamp_sah { left: 75px; top: 0; }
+
+        #form12-container .f12-cert-click {
+            position: absolute;
+            left: 210px;
+            top: -15px;
+            width: 67px;
+            height: 45px;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 3;
+        }
+
+        #form12-container .f12-cert-stamp {
+            position: absolute;
+            left: 277px;
+            top: -15px;
+            width: 68px;
+            height: 45px;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 3;
+        }
+
+        #form12-container.preview-mode .f12-invisible-btn,
+        #form12-container.preview-mode .f12-invisible-label,
+        #form12-container.preview-mode .f12-cert-click,
+        #form12-container.preview-mode .f12-cert-stamp {
+            display: none !important;
+        }
+
+        @media print {
+            #form12-container.form12-a4 {
+                width: 794px !important;
+                min-height: 1123px !important;
+                padding: 76px 68px 58px 68px !important;
+                margin: 0 auto !important;
+                box-shadow: none !important;
+                font-family: Arial, Helvetica, sans-serif !important;
+                font-size: 11px !important;
+            }
+            #form12-container .f12-invisible-btn,
+            #form12-container .f12-invisible-label,
+            #form12-container .f12-cert-click,
+            #form12-container .f12-cert-stamp {
+                display: none !important;
+            }
+        }
+
+
+        /* Borang 9 Arkib 9/08:
+           Maklumat No. 7, 8, 9 dan 10 dipusatkan sahaja */
+        #form9-container #f9_table th:nth-child(3),
+        #form9-container #f9_table th:nth-child(4),
+        #form9-container #f9_table th:nth-child(5),
+        #form9-container #f9_table th:nth-child(6),
+        #form9-container #f9_table td:nth-child(3),
+        #form9-container #f9_table td:nth-child(4),
+        #form9-container #f9_table td:nth-child(5),
+        #form9-container #f9_table td:nth-child(6) {
+            text-align: center !important;
+        }
+
+        #form9-container #f9_table td:nth-child(3) input,
+        #form9-container #f9_table td:nth-child(3) textarea,
+        #form9-container #f9_table td:nth-child(3) select,
+        #form9-container #f9_table td:nth-child(4) input,
+        #form9-container #f9_table td:nth-child(4) textarea,
+        #form9-container #f9_table td:nth-child(4) select,
+        #form9-container #f9_table td:nth-child(5) input,
+        #form9-container #f9_table td:nth-child(5) textarea,
+        #form9-container #f9_table td:nth-child(5) select,
+        #form9-container #f9_table td:nth-child(6) input,
+        #form9-container #f9_table td:nth-child(6) textarea,
+        #form9-container #f9_table td:nth-child(6) select {
+            text-align: center !important;
+        }
+
+
+        /* Surat Iringan: Perenggan 02 boleh ditaip, tandatangan tanpa kotak */
+        #letter-container #letter_body_02 {
+            width: 100%;
+            min-height: 54px;
+            resize: vertical;
+            line-height: 1.6;
+        }
+
+        #letter-container.preview-mode #letter_body_02 {
+            resize: none;
+        }
+
+        @media print {
+            #letter-container #letter_body_02 {
+                resize: none !important;
+                overflow: visible !important;
+            }
+        }
+
     </style>
 </head>
 <body class="bg-slate-100 flex flex-col min-h-screen">
@@ -1019,7 +1501,7 @@ Johor Darul Ta'zim.</textarea>
                         <div class="mt-3 text-[10pt] font-serif space-y-3 leading-relaxed">
                             <p>Dengan segala hormatnya saya merujuk kepada perkara di atas.</p>
                             
-                            <p>02. Sehubungan dengan itu, dikemukakan permohonan pelupusan bagi rekod terbitan dan bahan bercetak sekolah ini seperti yang tertera di dalam Borang Arkib 9/08 yang disertakan. Ringkasan rekod adalah seperti berikut:</p>
+                            <textarea id="letter_body_02" class="doc-edit-textarea font-serif w-full" rows="3">02. Sehubungan dengan itu, dikemukakan permohonan pelupusan bagi rekod terbitan dan bahan bercetak sekolah ini seperti yang tertera di dalam Borang Arkib 9/08 yang disertakan. Ringkasan rekod adalah seperti berikut:</textarea>
 
                             <div class="pl-6 space-y-1">
                                 <div>2.1 Jumlah Rekod / Tajuk : <strong id="lbl_letter_total_items">0</strong> tajuk</div>
@@ -1041,9 +1523,9 @@ Johor Darul Ta'zim.</textarea>
 
                         <!-- SIGNATURE AREA -->
                         <div class="mt-6 text-[10pt] font-serif space-y-2">
-                            <div class="border border-slate-300 w-44 h-20 bg-white flex items-center justify-center relative">
+                            <div class="w-44 h-20 bg-transparent flex items-center justify-center relative">
                                 <img id="letter_sig_img" src="" class="max-h-full max-w-full hidden" alt="Signature">
-                                <button onclick="openSignatureModal('letter_sig_img')" class="no-preview absolute inset-0 bg-slate-900/10 hover:bg-slate-900/20 text-xs text-slate-800 font-semibold flex items-center justify-center">Tandatangan Digital</button>
+                                <button onclick="openSignatureModal('letter_sig_img')" class="no-preview absolute inset-0 bg-transparent text-xs text-slate-500 hover:text-slate-800 font-semibold flex items-center justify-center">Tandatangan Digital</button>
                             </div>
                             <div>
                                 <input type="text" id="letter_officer_name" class="doc-edit-input font-bold text-[11pt]" value="(AHMAD BIN ABDULLAH)">
@@ -1090,51 +1572,66 @@ Johor Darul Ta'zim.</textarea>
                         <input type="hidden" id="f12_id" value="">
                         <input type="hidden" id="f12_form9_id" value="">
 
-                        <!-- OFFICIAL HEADER -->
-                        <div class="text-right text-[9pt] font-serif font-bold">Arkib 12/08</div>
-                        <div class="text-center font-bold text-[13pt] tracking-tight leading-tight mt-1">
-                            PENENTUSAHAN PEMUSNAHAN REKOD AWAM
+                        <div class="f12-top-reg">[Peraturan 9(2)]</div>
+                        <div class="f12-header-line">
+                            <div class="f12-form-no">Borang 12</div>
+                            <div class="f12-arkib-no">Arkib 12/08</div>
                         </div>
-                        <div class="text-center italic text-[9.5pt] mt-1">[Peraturan 9(2)]</div>
+                        <div class="f12-main-title">PENENTUSAHAN PEMUSNAHAN REKOD AWAM</div>
 
-                        <!-- BUTIR JABATAN -->
-                        <div class="mt-4 border border-black p-3 text-[9.5pt] space-y-2">
-                            <div class="font-bold underline">BUTIR-BUTIR JABATAN</div>
-                            <div>
-                                <label class="font-bold">(1) Kementerian/Jabatan/Agensi:</label>
-                                <input type="text" id="f12_kementerian" class="doc-edit-input">
-                            </div>
-                            <div>
-                                <label class="font-bold">(2) Bahagian/Cawangan/Unit:</label>
-                                <input type="text" id="f12_bahagian" class="doc-edit-input">
-                            </div>
-                        </div>
+                        <div class="f12-frame">
+                            <div class="f12-section-title">BUTIR-BUTIR JABATAN</div>
 
-                        <!-- MAKLUMAT REKOD -->
-                        <div class="mt-4 border border-black p-3 text-[9.5pt] space-y-3">
-                            <div class="font-bold underline">MAKLUMAT MENGENAI REKOD</div>
-                            
-                            <div>
-                                <div class="font-bold">(3) Surat Kebenaran Pemusnahan:</div>
-                                <div class="grid grid-cols-2 gap-4 pl-4 mt-1">
-                                    <div>3.1 No. Rujukan: <input type="text" id="f12_surat_ruj" class="doc-edit-input"></div>
-                                    <div>3.2 Tarikh Surat: <input type="date" id="f12_surat_tarikh" class="doc-edit-input"></div>
+                            <div class="f12-dept-row">
+                                <div class="f12-cell">
+                                    <div class="f12-inline">
+                                        <span>(1) Kementerian/Jabatan/Agensi:</span>
+                                        <input type="text" id="f12_kementerian">
+                                    </div>
+                                </div>
+                                <div class="f12-cell">
+                                    <div class="f12-inline">
+                                        <span>(2) Bahagian/Cawangan/Unit:</span>
+                                        <input type="text" id="f12_bahagian">
+                                    </div>
                                 </div>
                             </div>
 
-                            <div>
-                                <label class="font-bold">(4) Perihal Rekod:</label>
-                                <textarea id="f12_perihal" class="doc-edit-textarea font-serif" rows="3" placeholder="Contoh: Rekod Terbitan dan Buku Teks SPBT Rosak mengikut Borang 9..."></textarea>
+                            <div class="f12-record-title">MAKLUMAT MENGENAI REKOD</div>
+
+                            <div class="f12-permission">
+                                <div>(3)&nbsp;&nbsp;Surat Kebenaran Pemusnahan:</div>
+                                <div class="f12-permission-sub">
+                                    <div>
+                                        <span>3.1 No. Rujukan:</span>
+                                        <input type="text" id="f12_surat_ruj">
+                                    </div>
+                                    <div>
+                                        <span>3.2 Tarikh:</span>
+                                        <input type="date" id="f12_surat_tarikh">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label class="font-bold">(5) Meter Panjang Rekod Dimusnahkan:</label>
-                                    <input type="text" id="f12_meter" class="doc-edit-input" placeholder="e.g. 40.05 m.p">
+                            <div class="f12-one-line">
+                                <div class="f12-inline">
+                                    <span>(4)&nbsp;&nbsp;Perihal Rekod:</span>
+                                    <textarea id="f12_perihal" rows="1"></textarea>
                                 </div>
-                                <div>
-                                    <label class="font-bold">(6) Peringkat Keselamatan:</label>
-                                    <select id="f12_peringkat" class="doc-edit-select">
+                            </div>
+
+                            <div class="f12-one-line">
+                                <div class="f12-inline">
+                                    <span>(5)&nbsp;&nbsp;Meter Panjang Rekod Yang Dimusnahkan:</span>
+                                    <input type="text" id="f12_meter">
+                                </div>
+                            </div>
+
+                            <div class="f12-one-line">
+                                <div class="f12-inline">
+                                    <span>(6)&nbsp;&nbsp;Peringkat Keselamatan:</span>
+                                    <select id="f12_peringkat">
+                                        <option value=""></option>
                                         <option value="Terbuka">Terbuka</option>
                                         <option value="Terhad">Terhad</option>
                                         <option value="Sulit">Sulit</option>
@@ -1143,88 +1640,99 @@ Johor Darul Ta'zim.</textarea>
                                 </div>
                             </div>
 
-                            <!-- KAEDAH PEMUSNAHAN CHECKBOXES -->
-                            <div>
-                                <label class="font-bold">(7) Kaedah Pemusnahan:</label>
-                                <div class="grid grid-cols-3 gap-2 pl-4 mt-1">
-                                    <label class="flex items-center gap-1.5"><input type="checkbox" name="f12_kaedah" value="Dibakar"> Dibakar</label>
-                                    <label class="flex items-center gap-1.5"><input type="checkbox" name="f12_kaedah" value="Dirincih"> Dirincih</label>
-                                    <label class="flex items-center gap-1.5"><input type="checkbox" name="f12_kaedah" value="Dikitar semula"> Dikitar semula</label>
-                                    <label class="flex items-center gap-1.5"><input type="checkbox" name="f12_kaedah" value="Dipadamkan"> Dipadamkan</label>
-                                    <label class="flex items-center gap-1.5"><input type="checkbox" name="f12_kaedah" value="Dijual" onchange="toggleReceiptField(this.checked)"> Dijual</label>
+                            <div class="f12-method">
+                                <div class="f12-method-head">
+                                    <span>(7)&nbsp;&nbsp;&nbsp;Kaedah Pemusnahan :</span>
+                                    <div id="receiptContainer">
+                                        <label>(6) No Resit (Jika Dijual):</label>
+                                        <input type="text" id="f12_no_resit">
+                                    </div>
                                 </div>
-                                <div id="receiptContainer" class="hidden pl-4 mt-2">
-                                    <label class="font-bold text-rose-700">No. Resit (Wajib jika dijual):</label>
-                                    <input type="text" id="f12_no_resit" class="doc-edit-input w-64">
+                                <div class="f12-method-options">
+                                    <label class="f12-check-label"><input type="checkbox" name="f12_kaedah" value="Dibakar"> dibakar</label>
+                                    <label class="f12-check-label"><input type="checkbox" name="f12_kaedah" value="Dirincih"> dirincih</label>
+                                    <label class="f12-check-label"><input type="checkbox" name="f12_kaedah" value="Dikitar semula"> dikitar semula</label>
+                                    <label class="f12-check-label"><input type="checkbox" name="f12_kaedah" value="Dipadamkan"> dipadamkan</label>
+                                    <label class="f12-check-label"><input type="checkbox" name="f12_kaedah" value="Dijual" onchange="toggleReceiptField(this.checked)"> dijual</label>
                                 </div>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label class="font-bold">(8) Tarikh Pemusnahan:</label>
-                                    <input type="date" id="f12_tarikh_musnah" class="doc-edit-input">
+                            <div class="f12-destroy-row">
+                                <div class="f12-cell">
+                                    <div class="f12-inline">
+                                        <span>(8)&nbsp;&nbsp;Tarikh Pemusnahan:</span>
+                                        <input type="date" id="f12_tarikh_musnah">
+                                    </div>
                                 </div>
-                                <div>
-                                    <label class="font-bold">(9) Tempat Pemusnahan:</label>
-                                    <input type="text" id="f12_tempat_musnah" class="doc-edit-input">
+                                <div class="f12-cell">
+                                    <div class="f12-inline">
+                                        <span>(9)&nbsp;&nbsp;Tempat Pemusnahan:</span>
+                                        <input type="text" id="f12_tempat_musnah">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- PEGAWAI MELAKSANAKAN & SAKSI -->
-                        <div class="mt-4 border border-black p-3 text-[9.5pt] space-y-4">
-                            <div class="font-bold underline">PEGAWAI YANG MELAKSANAKAN PEMUSNAHAN</div>
-                            <div class="grid grid-cols-2 gap-6">
-                                <!-- PEGAWAI EXEC -->
-                                <div class="space-y-2 border-r border-slate-300 pr-3">
-                                    <div class="font-bold">(10) Pegawai Pelaksana:</div>
-                                    <div>Nama: <input type="text" id="f12_nama_exec" class="doc-edit-input font-bold"></div>
-                                    <div>Jawatan: <input type="text" id="f12_jawatan_exec" class="doc-edit-input"></div>
-                                    <div class="text-center mt-2">
-                                        <div class="border border-slate-300 h-16 w-32 mx-auto relative bg-white">
-                                            <img id="f12_sig_exec" src="" class="max-h-full max-w-full hidden" alt="Sig Exec">
-                                            <button onclick="openSignatureModal('f12_sig_exec')" class="no-preview absolute inset-0 text-xs bg-slate-100 hover:bg-slate-200">Tandatangan</button>
+                            <div class="f12-officer-head">PEGAWAI YANG MELAKSANAKAN PEMUSNAHAN</div>
+
+                            <div class="f12-officers">
+                                <div class="f12-officer-box">
+                                    <span class="f12-officer-num">(10)</span>
+                                    <div class="f12-field-line"><span>Nama Pegawai:</span><input type="text" id="f12_nama_exec"></div>
+                                    <div class="f12-field-line">
+                                        <span>Tandatangan:</span>
+                                        <div class="f12-sig-slot">
+                                            <img id="f12_sig_exec" src="" class="hidden" alt="Sig Exec">
+                                            <button type="button" onclick="openSignatureModal('f12_sig_exec')" class="f12-invisible-btn no-preview" title="Tandatangan"></button>
                                         </div>
                                     </div>
+                                    <div class="f12-field-line"><span>Jawatan:</span><input type="text" id="f12_jawatan_exec"></div>
                                 </div>
 
-                                <!-- SAKSI -->
-                                <div class="space-y-2">
-                                    <div class="font-bold">(11) Saksi Pemusnahan:</div>
-                                    <div>Nama Saksi: <input type="text" id="f12_nama_saksi" class="doc-edit-input font-bold"></div>
-                                    <div>Jawatan: <input type="text" id="f12_jawatan_saksi" class="doc-edit-input"></div>
-                                    <div class="text-center mt-2">
-                                        <div class="border border-slate-300 h-16 w-32 mx-auto relative bg-white">
-                                            <img id="f12_sig_saksi" src="" class="max-h-full max-w-full hidden" alt="Sig Saksi">
-                                            <button onclick="openSignatureModal('f12_sig_saksi')" class="no-preview absolute inset-0 text-xs bg-slate-100 hover:bg-slate-200">Tandatangan</button>
+                                <div class="f12-officer-box">
+                                    <span class="f12-officer-num">(11)</span>
+                                    <div class="f12-field-line"><span>Nama Saksi:</span><input type="text" id="f12_nama_saksi"></div>
+                                    <div class="f12-field-line">
+                                        <span>Tandatangan:</span>
+                                        <div class="f12-sig-slot">
+                                            <img id="f12_sig_saksi" src="" class="hidden" alt="Sig Saksi">
+                                            <button type="button" onclick="openSignatureModal('f12_sig_saksi')" class="f12-invisible-btn no-preview" title="Tandatangan"></button>
                                         </div>
                                     </div>
+                                    <div class="f12-field-line"><span>Jawatan:</span><input type="text" id="f12_jawatan_saksi"></div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- PENENTUSAHAN -->
-                        <div class="mt-4 border border-black p-3 text-[9.5pt] space-y-3">
-                            <div class="font-bold underline">PENENTUSAHAN</div>
-                            <p>(12) Saya mengesahkan bahawa rekod di atas telah dimusnahkan dengan sewajarnya mengikut Seksyen 25 dan 26, Akta Arkib Negara 2003 [Akta 629]:</p>
+                            <div class="f12-cert-title">PENENTUSAHAN</div>
 
-                            <div class="grid grid-cols-2 gap-6 mt-2">
-                                <div class="space-y-2">
-                                    <div>Nama Pegawai: <input type="text" id="f12_nama_sah" class="doc-edit-input font-bold"></div>
-                                    <div>Jawatan: <input type="text" id="f12_jawatan_sah" class="doc-edit-input"></div>
-                                    <div>Tarikh Penentusahan: <input type="date" id="f12_tarikh_sah" class="doc-edit-input"></div>
+                            <div class="f12-cert-body">
+                                <div class="f12-cert-text">
+                                    <span class="f12-cert-num">(12)</span>
+                                    <span>Saya mengesahkan bahawa rekod di atas telah dimusnahkan dengan sewajarnya mengikut Seksyen 25<br>dan 26, Akta Arkib Negara 2003 [Akta 629]:</span>
                                 </div>
-                                <div class="flex items-center justify-center gap-2">
-                                    <div class="border border-slate-300 w-32 h-20 relative bg-white text-center">
-                                        <img id="f12_sig_sah" src="" class="max-h-full max-w-full hidden" alt="Sig Sah">
-                                        <button onclick="openSignatureModal('f12_sig_sah')" class="no-preview absolute inset-0 text-xs bg-slate-100 hover:bg-slate-200">Tandatangan</button>
+
+                                <div class="f12-cert-grid">
+                                    <div>
+                                        <span>Nama Pegawai:</span>
+                                        <input type="text" id="f12_nama_sah">
                                     </div>
-                                    <div class="border border-slate-300 w-20 h-20 relative bg-white text-center">
-                                        <img id="f12_stamp_sah" src="" class="max-h-full max-w-full hidden" alt="Cap Sah">
-                                        <label class="no-preview absolute inset-0 text-xs bg-slate-100 hover:bg-slate-200 flex items-center justify-center cursor-pointer">
-                                            Cap
+                                    <div>
+                                        <span>Tandatangan dan Meterai/Cap Jabatan:</span>
+                                        <div class="f12-cert-assets">
+                                            <img id="f12_sig_sah" src="" class="hidden" alt="Sig Sah">
+                                            <img id="f12_stamp_sah" src="" class="hidden" alt="Cap Sah">
+                                        </div>
+                                        <button type="button" onclick="openSignatureModal('f12_sig_sah')" class="f12-cert-click no-preview" title="Tandatangan"></button>
+                                        <label class="f12-cert-stamp no-preview" title="Muat naik cap">
                                             <input type="file" accept="image/*" class="hidden" onchange="uploadImageToImg(this, 'f12_stamp_sah')">
                                         </label>
+                                    </div>
+                                    <div>
+                                        <span>Jawatan:</span>
+                                        <input type="text" id="f12_jawatan_sah">
+                                    </div>
+                                    <div>
+                                        <span>Tarikh:</span>
+                                        <input type="date" id="f12_tarikh_sah">
                                     </div>
                                 </div>
                             </div>
