@@ -1504,9 +1504,24 @@ Johor Darul Ta'zim.</textarea>
                             <textarea id="letter_body_02" class="doc-edit-textarea font-serif w-full" rows="3">02. Sehubungan dengan itu, dikemukakan permohonan pelupusan bagi rekod terbitan dan bahan bercetak sekolah ini seperti yang tertera di dalam Borang Arkib 9/08 yang disertakan. Ringkasan rekod adalah seperti berikut:</textarea>
 
                             <div class="pl-6 space-y-1">
-                                <div>2.1 Jumlah Rekod / Tajuk : <strong id="lbl_letter_total_items">0</strong> tajuk</div>
-                                <div>2.2 Jumlah Naskhah/Buku : <strong id="lbl_letter_total_books">0</strong> buah</div>
-                                <div>2.3 Meter Panjang Rekod : <strong id="lbl_letter_meter">0.00</strong> m.p</div>
+                                <div class="flex items-baseline">
+                                    <span>2.1 Jumlah Rekod / Tajuk :</span>
+                                    <input type="text" id="letter_total_items_edit" class="doc-edit-input inline-block w-24 mx-1 text-center" value="0">
+                                    <span>tajuk</span>
+                                    <strong id="lbl_letter_total_items" class="hidden">0</strong>
+                                </div>
+                                <div class="flex items-baseline">
+                                    <span>2.2 Jumlah Naskhah/Buku :</span>
+                                    <input type="text" id="letter_total_books_edit" class="doc-edit-input inline-block w-24 mx-1 text-center" value="0">
+                                    <span>buah</span>
+                                    <strong id="lbl_letter_total_books" class="hidden">0</strong>
+                                </div>
+                                <div class="flex items-baseline">
+                                    <span>2.3 Meter Panjang Rekod :</span>
+                                    <input type="text" id="letter_meter_edit" class="doc-edit-input inline-block w-24 mx-1 text-center" value="0.00">
+                                    <span>m.p</span>
+                                    <strong id="lbl_letter_meter" class="hidden">0.00</strong>
+                                </div>
                             </div>
 
                             <textarea id="letter_body_extra" class="doc-edit-textarea font-serif" rows="3">03. Bersama-sama surat ini disertakan 2 salinan Borang Arkib 9/08 untuk pertimbangan dan kelulusan pihak tuan selanjutnya.</textarea>
@@ -3685,5 +3700,46 @@ Johor Darul Ta'zim.</textarea>
             });
         }
     </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    function syncLetterEditableSummary() {
+        var pairs = [
+            ['lbl_letter_total_items', 'letter_total_items_edit'],
+            ['lbl_letter_total_books', 'letter_total_books_edit'],
+            ['lbl_letter_meter', 'letter_meter_edit']
+        ];
+        pairs.forEach(function(pair) {
+            var source = document.getElementById(pair[0]);
+            var input = document.getElementById(pair[1]);
+            if (source && input && !input.dataset.userEdited) {
+                input.value = (source.textContent || '').trim();
+            }
+            if (input && !input.dataset.editListener) {
+                input.addEventListener('input', function() {
+                    input.dataset.userEdited = '1';
+                });
+                input.dataset.editListener = '1';
+            }
+        });
+    }
+
+    syncLetterEditableSummary();
+
+    var targets = [
+        document.getElementById('lbl_letter_total_items'),
+        document.getElementById('lbl_letter_total_books'),
+        document.getElementById('lbl_letter_meter')
+    ].filter(Boolean);
+
+    if (targets.length && window.MutationObserver) {
+        var observer = new MutationObserver(syncLetterEditableSummary);
+        targets.forEach(function(el) {
+            observer.observe(el, {childList:true, characterData:true, subtree:true});
+        });
+    }
+});
+</script>
+
 </body>
 </html>
